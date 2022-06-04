@@ -1,0 +1,59 @@
+@media screen and (max-width: 767px) {
+    html {
+        font-size: 18px;
+    }
+    main {
+        width: 90%;
+        margin-top: 5vh;
+    }
+
+    #search_container, #weather {
+        width: 100%;
+    }
+
+    #weather {
+        height: 500px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    #suggestions {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    html {
+        font-size: 18px;
+    }
+    main {
+        width: 70%;
+        margin-top: 7vh;
+    }
+
+    #search_container {
+        width: 80%;
+    }
+    
+    #weather {
+        width: 65%;
+    }
+
+    #weather {
+        height: 550px;
+    }
+
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+}

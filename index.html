@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast API</title>
+    <script src="scripts/promise.min.js"></script>
+    <script src="scripts/fetch.umd.js"></script>
+    <script src="scripts/app.js" defer></script>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <main>
+        <h1>Weather Forecast</h2>
+        <h2>Check current weather in your city</h3>
+        <div id="search_container">
+            <form id="search_form">
+                <input type="text" class="search">
+                <ul id="suggestions">
+                    <li>Filter for a city</li>
+                </ul>
+            </form>
+        </div>
+            
+        <div id="weather"></div>
+        <p class="info">*To select a city, enter the city name 
+            into the search field and click on the background.</p>
+        <p class="info">**The app will show suggestions for 
+            <span class="bold">US locations only</span>.</p>
+    </main>
+</body>
+</html>

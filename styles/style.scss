@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import "./search-container";
+@import "./weather-container";
+@import "./media-queries";
+
+//font settings
+$primary-text : #222222;
+$primary-font : 'Poppins', sans-serif;
+$primary-font-size: 25px;
+$primary-font-weight: 300;
+
+// color settings
+$primary-orange : #ffc600;
+$primary-green: #859088;
+$primary-blue: #6494b4;
+
+// mixin functions
+@mixin flexCenter($direction) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+    background: $primary-orange;
+    overflow-x: hidden;
+    font-family: $primary-font;
+    font-size: $primary-font-size;
+    font-weight: $primary-font-weight;
+    color: $primary-text;
+}
+
+body {
+    @include flexCenter(column);
+}
+
+main {
+    @include flexCenter(column);
+    width: 60%;
+    margin-top: 15vh;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 600;
+}
+
+.highlight {
+    background: $primary-orange;
+}
+
+.info {
+    font-size: 0.7rem;
+    text-align: center;
+    &:last-child {
+        margin-bottom: 30px;
+    }
+}
+
+.bold {
+    font-weight: bold;
+}
